@@ -8,7 +8,7 @@ import kotlin.reflect.KClass
 @Retention(AnnotationRetention.RUNTIME)
 @Constraint(validatedBy = [ValidSearchRequestValidator::class])
 annotation class ValidSearchRequest(
-    val message: String = "Invalid search request",
+    val message: String = "{com.uzabase.corporateproduct.lesson.demo.validator.ValidSearchRequest.message}",
     val groups: Array<KClass<*>> = [],
     val payload: Array<KClass<out Payload>> = [],
 )

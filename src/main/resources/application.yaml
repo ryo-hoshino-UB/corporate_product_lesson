@@ -1,4 +1,5 @@
 spring.application.name: demo
+spring.messages.basename: ValidationMessages
 logging:
   level:
     root: INFO

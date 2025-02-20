@@ -22,7 +22,7 @@ data class TimeRangeRequest(
 
 data class Email(val email: String)
 
-@ValidSearchRequest
+@ValidSearchRequest(message = "SearchRequestのバリデーションエラー")
 data class SearchRequest(
     @field:Size(max = 30, message = "wordは30文字以下で指定してください")
     val word: String?,
